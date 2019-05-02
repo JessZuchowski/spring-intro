@@ -25,5 +25,7 @@ This app is a Gradle project which uses the Spring framework for Java.
 The Spring Initializr was done with artifact songr and the following dependencies: Web, DevTools, and Thymeleaf.
 Added dependencies for lab 12: JPA and Postgresql.
 
+## Resources: 
 
+<a href="https://github.com/codefellows/seattle-java-401d3/tree/master/12-spring-RESTful-routing-database">Code Fellows Java 401d3</a>
   
