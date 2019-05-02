@@ -1,5 +1,6 @@
 package com.lab11java401d3.songr;
 
+import com.lab11java401d3.songr.controllers.IntroController;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

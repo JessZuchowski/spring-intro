@@ -1,4 +1,4 @@
-package com.lab11java401d3.songr;
+package com.lab11java401d3.songr.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

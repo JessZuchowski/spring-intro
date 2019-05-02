@@ -1,4 +1,4 @@
-package com.lab11java401d3.songr;
+package com.lab11java401d3.songr.database;
 
 
 import com.sun.javafx.beans.IDProperty;
@@ -6,6 +6,8 @@ import com.sun.javafx.beans.IDProperty;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import java.util.List;
 
 @Entity
 public class Album {
@@ -13,6 +15,9 @@ public class Album {
     @Id
     @GeneratedValue
     public long id;
+
+    @OneToMany(mappedBy = "album")
+    List<Song> songs;
 
     public String title;
     public String artist;
@@ -22,5 +27,3 @@ public class Album {
 
 }
 
-//title, artist, songCount, length(seconds), imageURL
-//user should be able to see information about albums on site and add albums

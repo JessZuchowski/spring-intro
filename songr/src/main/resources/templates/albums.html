@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Albums</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+
+<div>
+    <div th:each="album : ${albums}">
+    <div th:text="${album.id}"/>
+    <div th:text="${album.title}"/>
+    <div th:text="${album.artist}"/>
+    <div th:text="${album.songCount}"/>
+    <div th:text="${album.length}"/>
+    <div th:text="${album.imageURL}"/>
+    </div>
+
+    <form action="albums/add" method="post">
+        <input type="text" name="title" placeholder="Title"/>
+        <input type="text" name="artist" placeholder="Artist"/>
+        <input type="number"  name="songCount" placeholder="Song Count"/>
+        <input type="number"  name="length" placeholder="Length"/>
+        <input type="text"  name="imageURL" placeholder="Image URL"/>
+        <button type="submit">Add</button>
+    </form>
+</div>
+
+</body>
+</html>
