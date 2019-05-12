@@ -3,6 +3,8 @@ package com.lab11java401d3.songr.controllers;
 
 import com.lab11java401d3.songr.database.Album;
 import com.lab11java401d3.songr.database.AlbumRepository;
+import com.lab11java401d3.songr.database.Song;
+import com.lab11java401d3.songr.database.SongRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,6 +19,9 @@ public class AlbumsController {
 
     @Autowired
     AlbumRepository albumRepo;
+
+    @Autowired
+    SongRepository songRepo;
 
     @GetMapping
     public String getAlbums(Model model) {
