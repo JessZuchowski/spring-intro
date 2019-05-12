@@ -15,9 +15,13 @@
   3. This utilizes an interface class for a repository that extends CrudRepository.
   
 ## To Use:
-
+Clone repo and build app in IntelliJ.
 Running on localhost:8080, visit /capitalize/"add your text here" 
 Example: localhost:8080/capitalize/hey there
+
+Songr 
+Example: localhost:8080/albums
+Example: localhost:8080/songs
 
 ## Setup Included:
 
