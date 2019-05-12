@@ -51,7 +51,7 @@ public class AlbumsController {
         album.imageURL = imageURL;
 
         album = albumRepo.save(album);
-        return new RedirectView("/albums");
+        return new RedirectView("/");
     }
 }
 
